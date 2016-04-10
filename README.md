@@ -8,7 +8,7 @@ Solve issues in an interesting way. Interesting could mean performant or strange
 
 **Submitting a solution**
 
-Clone the repo.
+Fork and clone the repo.
 
 Create a directory inside the directory for the issue you are solving. Name the new directory after your username. All the files you need to solve the issue should go in there.
 
