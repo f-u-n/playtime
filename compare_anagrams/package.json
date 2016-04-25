@@ -1,0 +1,25 @@
+{
+  "name": "compare_anagrams",
+  "version": "0.0.1",
+  "description": "detect if 2 strings are anagrams of each other",
+  "main": "index.js",
+  "dependencies": {},
+  "directories": "test",
+  "devDependencies": {
+    "glob": "^7.0.3",
+    "jasmine-node": "^1.14.5"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-u-n/playtime.git"
+  },
+  "author": "@f-u-n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/f-u-n/playtime/issues"
+  },
+  "homepage": "https://github.com/f-u-n/playtime#readme"
+}
