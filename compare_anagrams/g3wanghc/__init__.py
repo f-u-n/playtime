@@ -1,0 +1,1 @@
+from .anagram import Anagram
