@@ -4,7 +4,7 @@ function checkAnagram(string1, string2){
         return str;       
     }    
     if(string1.length == string2.length && stringToArray(string1) === stringToArray(string2)) {
-     return true;   
+        return true;   
     }
     else {
         return false;
