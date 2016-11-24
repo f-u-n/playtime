@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <input type="text" name="user-input" id="user-input" value="100"/>
+    <p id="display-result"></p>
+
+    <script>
+      $( document ).ready(function() {
+        // compare the length.
+        var str1 = "abbb",
+            str2 = "bbba";
+
+        var str1Length = str1.length,
+            str2Length = str2.length;
+
+        // compare the length.
+        if(str1Length !== str2Length) {
+          $('#display-result').html("the words are not anagram");
+          return false;
+        }
+
+        for(var i = str1Length; i--;) {
+          if(str1[i] !== str2[str2Length - 1 - i]) {
+            $('#display-result').html("the words are not anagram");
+            return false;
+          }
+        }
+
+        $('#display-result').html("the words are anagram");
+        return true;
+        
+      });
+    </script> 
+  </body>
+
+</html>

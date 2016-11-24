@@ -1,0 +1,34 @@
+<!DOCTYPE html >
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <input type="text" name="user-input" id="user-input" value="100"/>
+    <p id="display-result"></p>
+
+    <script>
+      $( document ).ready(function() {
+        $('#user-input').on('blur', function(e) {
+          countOnes($(this).val());
+        });
+
+        function countOnes(userInput){
+          var count = 0;
+          
+          for(i=0; i<=userInput.length; i++){
+            if (userInput[i] == 1) {
+              count++;
+            }
+          };
+          $('#display-result').html("Number of ones => " + count);
+        }
+      });
+    </script> 
+  </body>
+
+</html>

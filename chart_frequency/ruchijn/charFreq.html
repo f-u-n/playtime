@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <input type="text" name="user-input" id="user-input" value="100"/>
+    <p id="display-result"></p>
+
+    <script>
+      $( document ).ready(function() {
+        $('#user-input').on('blur', function(e) {
+          $('#display-result').html(count($(this).val()));
+        });
+
+        function count (string) {  
+          var freq = {},
+              displayText = "";
+
+          for (var i=0; i<string.length;i++) {
+              var character = string.charAt(i);
+              if (freq[character]) {
+                 freq[character]++;
+              } else {
+                 freq[character] = 1;
+              }
+              displayText += "character is " + character + " and freq is " + freq[character] + "<br />";
+          }
+
+          //if we need to return the object do return freq instead of return displayText
+          return displayText;
+        }
+      });
+    </script> 
+  </body>
+
+</html>
